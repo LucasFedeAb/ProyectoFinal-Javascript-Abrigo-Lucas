@@ -1,0 +1,27 @@
+/* Footer */
+
+#footer-web{
+    width: 100%;
+    height: 60px;
+
+    .bi-arrow-left {
+        width: 45px;
+        height: 40px;
+        .arrow__return:hover {
+            
+            color: #cccccc;
+        }
+    }
+
+    .img__icon__foot{
+        width: 60px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        margin-bottom: 2px;
+    }
+}
+
+/* Cierre Footer */

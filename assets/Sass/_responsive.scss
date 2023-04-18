@@ -1,0 +1,225 @@
+/* Responsive */
+@media (max-width: 575px) {
+    //Slider Categorys
+
+    #container-title-category{
+        padding: 8%;
+    }
+
+    .triple-slider .logo-image {
+        width:160px;
+        margin-left: -80px
+    }
+    //Index
+
+    .logo {
+        width: 20%;
+    }
+    .link__categoria{
+        font-size: 0.8rem;
+    }
+
+    .tittle__index {
+        font-size: 2.5rem;
+    }
+
+
+    #button-index {
+        margin-top: 20%;
+
+        .button__jugar{
+            padding: 4% 35% 4% 35%;
+        }
+    }
+
+    #navbar__inline {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: end;
+    }
+    //Categorys
+
+
+    .title__categoria{
+        
+        font-size: 1.6rem;
+        font-weight: 700;
+        letter-spacing: 0.3rem;
+    }
+
+    //GamePlay
+
+    #life-container {
+        width: 100%;
+        max-width: 80px;
+        .img__life{
+            width: 12px;
+            max-width: 12px;
+        } 
+    }
+
+    #card-game{
+        margin: 2% 0%;
+    }
+
+    #category-container {
+        font-size: 1rem;
+    }
+
+    #question-container {
+        font-size: 1rem;
+    }
+
+    #answer-buttons-container {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .question {
+        padding: 10px;
+    }
+
+    #footer-web{
+        display: none;
+    }
+
+}
+
+
+@media (min-width:575px) and (max-width:767px) {
+    //Index
+
+    .logo {
+        width: 20%;
+    }
+    .link__categoria{
+        font-size: 0.8rem;
+    }
+
+    .tittle__index {
+        font-size: 2.5rem;
+    }
+
+
+    #button-index {
+        margin-top: 20%;
+
+        .button__jugar{
+            padding: 4% 35% 4% 35%;
+        }
+    }
+
+    #navbar__inline {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: end;
+    }
+    //Categorys
+
+
+    .title__categoria{
+        
+        font-size: 1.6rem;
+        font-weight: 700;
+        letter-spacing: 0.3rem;
+    }
+
+    //GamePlay
+
+    #life-container {
+        width: 100%;
+        max-width: 130px;
+        .img__life{
+            width: 25px;
+            max-width: 25px;
+        } 
+    }
+
+    #category-container {
+        font-size: 1.2rem;
+    }
+
+    #card-game{
+        margin: 2% 5%;
+    }
+
+    #question-container {
+        font-size: 1.2rem;
+    }
+
+    #answer-buttons-container {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    .question {
+        padding: 10px;
+    }
+
+    #footer-web{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    //Index
+    .logo {
+        width: 10%;
+    }
+    .tittle__index {
+        font-size: 3rem;
+    }
+
+    #button-index {
+        margin-top: 5%;
+        .button__jugar{
+            padding: 2% 20% 2% 20%;
+        }
+    }
+
+    //Categorys
+
+    #container-title-category{
+        padding: 0%;
+    }
+    .title__categoria{
+        font-size: 3.5rem;
+        font-weight: 700;
+        letter-spacing: 1rem;
+    }
+
+
+    //Game Play
+
+    #life-container {
+        width: 100%;
+        max-width: 130px;
+        .img__life{
+            width: 25px;
+            max-width: 25px;
+        } 
+    }
+
+    #category-container {
+        font-size: 1.5rem;
+    }
+
+    #card-game{
+        margin: 3% 20%;
+    }
+
+    #question-container {
+        font-size: 1.5rem;
+    }
+
+    #answer-buttons-container {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    #footer-mobile{
+        display: none;
+    }
+}
+
+/* fin Responsive  */

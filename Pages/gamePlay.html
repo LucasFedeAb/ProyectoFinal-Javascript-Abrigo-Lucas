@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qplay | Juego</title>
+  <link rel="shortcut icon" href="../assets/Image/iconpng.png" type="image/x-icon">
+  <!-- Boostrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- Animate -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- FontAweome CDN Link for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!-- css local -->
+  <link rel="stylesheet" type="text/css" href="../assets/Sass/main.css">
+</head>
+
+<body id="body-gamePlay">
+  <header id="header-gamePlay">
+    <nav class="navbar navbar-dark bg-dark ">
+      <div id="navbar__inline" class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img class="logo" src="../assets/Image/IconApp/iconApp.png"
+            alt="logo">
+          <span class="span__login letra__p">P</span>
+          <span class="span__login letra__l">L</span>
+          <span class="span__login letra__a">A</span>
+          <span class="span__login letra__y">Y</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div id="navbar__inline" class="offcanvas-header">
+            <a class="navbar-brand" href="../index.html"><img class="logo" src="../assets/Image/IconApp/iconApp.png"
+                alt="logo">
+              <span class="span__login-toggler letra__p">P</span>
+              <span class="span__login-toggler letra__l">L</span>
+              <span class="span__login-toggler letra__a">A</span>
+              <span class="span__login-toggler letra__y">Y</span></a>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li id="avatar-container" class="nav-item d-flex flex-row-reverse align-items-center mb-5">
+                <div class="container-fluid d-flex flex-column align-items-start">
+                  
+                  <div id="nombre-user" class="me-2 d-flex justify-content-center align-items-center mb-3">
+                    
+                  </div>
+                  <button class="nav-link active text-light bg-secondary btn__avatar">Cambiar Avatar</button>
+                </div>
+              </li>
+              <li class="nav-item dropdown d-flex mb-3">
+                <div class="me-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                    class="bi bi-play text-secondary mt-1" viewBox="0 0 20 20">
+                    <path
+                      d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z" />
+                  </svg>
+                </div>
+
+                <div>
+                  <a class="nav-link dropdown-toggle align-items-center" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Juegos
+                  </a>
+                  <ul id="liNav" class="dropdown-menu dropdown-menu-dark">
+                    <li id="nav-deportes"><a class="dropdown-item mb-3" href="./gamePlay.html">Deportes</a></li>
+                    <li id="nav-geografia"><a class="dropdown-item mb-3" href="./gamePlay.html">Geografia</a></li>
+                    <li id="nav-historia"><a class="dropdown-item mb-3" href="./gamePlay.html">Historia</a></li>
+                    <li id="nav-programacion"><a class="dropdown-item mb-3" href="./gamePlay.html">Programacion</a></li>
+                    <li id="nav-aleatorio"><a class="dropdown-item " href="./gamePlay.html">Aleatorio</a></li>
+                    
+                  </ul>
+                </div>
+
+              </li>
+              <li class="nav-item dropdown d-flex mb-3 align-items-center">
+                <div class="me-2 d-flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-collection-play text-secondary mt-2 me-2" viewBox="0 0 20 20">
+                    <path d="M2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3zm2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1zm2.765 5.576A.5.5 0 0 0 6 7v5a.5.5 0 0 0 .765.424l4-2.5a.5.5 0 0 0 0-.848l-4-2.5z"/>
+                    <path d="M1.5 14.5A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5h-13zm13-1a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5h-13A.5.5 0 0 0 1 6v7a.5.5 0 0 0 .5.5h13z"/>
+                  </svg>
+                  <a class="nav-link statistics" href="#">Estadisticas</a>
+                </div>
+              </li>
+              <li class="nav-item d-flex mb- align-items-center">
+                <div class="me-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                    class="bi bi-headset text-secondary mt-1" viewBox="0 0 16 16">
+                    <path
+                      d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z" />
+                  </svg>
+                </div>
+                <a class="nav-link help" href="#">Ayuda</a>
+              </li>
+              <li class="nav-item d-flex mb-2 align-items-center btn__salir">
+                <div class="me-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                    class="bi bi-box-arrow-right text-secondary mt-1" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                      d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+                    <path fill-rule="evenodd"
+                      d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                  </svg>
+                </div>
+                <a class="nav-link" href="../index.html">Salir</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="d-flex align-items-center justify-content-center">
+    <div id="life-container" class="text-center d-flex align-items-center">
+      <div class="life__text text-light">
+        <p id="life">Vidas</p>
+      </div>
+      <div class="life__icon life__1">
+        <img class="img__life " src="../assets/Image/Icon-nav/life.png" alt="life">
+      </div>
+      <div class="life__icon life__2">
+        <img class="img__life " src="../assets/Image/Icon-nav/life.png" alt="life">
+      </div>
+      <div class="life__icon life__3">
+        <img class="img__life " src="../assets/Image/Icon-nav/life.png" alt="life">
+      </div>
+    </div>
+  </section>
+  
+  <main id="card-game">
+    <main id="body-juegos">
+      <section id="time-life" class="d-flex justify-content-end">
+        <div id="time-line">
+          <div id="null"></div>
+          <div id="line" class="countdown-line"></div>
+          <div id="nulo"></div>
+        </div>
+
+        <div id="timer-container" class="justify-content-end">
+          <div class="div__time">
+            <p id="timer-text"></p>
+          </div>
+        </div>
+      </section>
+      
+      <section id="playRoom" >
+        <div id="quiz-container">
+
+          <div id="alert-correct">
+            <p class="alert__msg"></p>
+          </div>
+          <div id="category-container">
+            <h2 class="category"></h2>
+          </div>
+
+          <div id="question-container">
+            <h2 id="question"></h2>
+          </div>
+
+          <div id="answer-buttons-container" class="container text-center">
+            <section id="btn-answers">
+              <div class="row">
+                <div class="col col-12 col-sm-6 mb-2">
+                  <button class="btn btn0 answer__button p-3 w-100"> </button>
+                </div>
+                <div class="col col-12 col-sm-6 mb-2">
+                  <button class="btn btn1 answer__button p-3 w-100"></button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col col-12 col-sm-6 mb-2">
+                  <button class="btn btn2 answer__button p-3 w-100"></button>
+                </div>
+                <div class="col col-12 col-sm-6 mb-2">
+                  <button class="btn btn3 answer__button p-3 w-100"></button>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div id="score-container">
+            <p class="score">Score:0</p>
+          </div>
+          <div id="btn-fin" class="d-flex align-items-center justify-content-center ">
+            
+          </div>
+        </div>
+
+      </section>
+    </main>
+  </main>
+  
+  <footer id="footer-mobile" class="fixed-bottom">
+    <div class="container__foot bg-dark">
+
+      <div class="menu__foot">
+        
+        <li class="statistics__mobile"><a href="#"><i class="bi bi-collection-play-fill icon__foot"></i></a></li>
+        <li><a href="./categorysSlider.html"><span class="fas fa-home icon__home"></span></a></li> 
+        <li class="help__mobile"><a href="#"><i class="bi bi-headset icon__foot "></i></a></li>
+        
+        <div class="line"></div>
+      </div>
+    </div>
+  </footer>
+
+  <footer id="footer-web" class="contenedor-icono fixed-bottom elevated bg-dark">
+    <div class="row">
+      <div class="container-return-juegos col-3 text-left pl-4 m-0">
+        <a class="btn-return-juegos" href="./categorysSlider.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-arrow-left p-1 text-white" viewBox="0 0 16 16">
+            <path class="arrow__return" fill-rule="evenodd"
+              d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+          </svg>
+        </a>
+      </div>
+      <div class=" col-6 justify-content-center align-items-center text-center w-100">
+        <a href="../index.html"><img class="img__icon__foot" src="../assets/Image/IconApp/icon-bg-dark.png" alt="icon"></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <!-- Sweet Alert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Js local -->
+  <script type="module" src="../assets/Script/gamePlay.js"></script>
+</body>
+</html>

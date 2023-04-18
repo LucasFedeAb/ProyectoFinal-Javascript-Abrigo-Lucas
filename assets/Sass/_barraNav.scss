@@ -1,0 +1,62 @@
+.container__foot {
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.container__foot .menu__foot {
+    display: flex;
+    position: relative;
+}
+
+.container__foot .menu__foot li {
+    font-size: 25px;
+    list-style: none;
+    flex: 1;
+    cursor: pointer;
+    user-select: none;
+}
+
+.container__foot .menu__foot li a {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.container__foot .menu__foot li:hover a {
+    color: white;
+}
+
+.container__foot .menu__foot .line {
+    position:absolute;
+    height: 5px;
+    width: 33%;
+    background:white;
+    left: 40%;
+    top: 0;
+    transition: all 0.3s ease;  
+    display: none; 
+}
+
+.container__foot .menu__foot li:nth-child(1):hover~.line {
+    left: 0%;
+}
+
+.container__foot .menu__foot li:nth-child(2):hover~.line {
+    left: 33.3%;
+}
+
+.container__foot .menu__foot li:nth-child(3):hover~.line {
+    left:66.6%;
+}
+
+
+.icon__foot{
+    width: 25px;
+}
+
+.icon__home{
+    font-size: 30px;
+    color: $colorFluor;
+}

@@ -1,0 +1,69 @@
+/* Header */
+
+//Navbar
+
+#navbar__inline{
+    height: 35px;
+    align-content:center;
+    
+    .span__login{
+        font-size: 0.8rem;
+    }
+
+    .span__login-toggler{
+        font-size: 0.8rem;
+    }
+
+    .btn__avatar{
+        border-radius: 10px;
+        border: none;
+        padding: 4%;
+        font-weight:500;
+
+        &:active{
+            padding: 2%;
+        }
+    }
+    .user__img{
+        border-radius: 50%;
+        width: 75px;
+    }
+
+    .link__index{
+        text-decoration: none;
+        font-weight:bold ;
+    }
+    
+    .letra__q{
+        color: $ColorLetraQ;
+        letter-spacing:1rem;
+    }
+    
+    .letra__p{
+        color:$ColorLetraP;
+    }
+    
+    .letra__l{
+        color:$ColorLetraL;
+    }
+    
+    .letra__a{
+        color:$ColorLetraA;
+    }
+    
+    .letra__y{
+      color:$ColorLetraY;
+    }
+
+    #img-category{
+        display: none;
+    }
+
+    .btn__salir{
+        position: absolute;
+        bottom: 0%;
+    }
+
+}
+
+
