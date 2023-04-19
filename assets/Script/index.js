@@ -16,10 +16,27 @@ let existe = localStorage.getItem('Nombre');
 register.classList.add('d__none');
 
 
+
 function showRegister() {
     if (existe) {
         window.location.href = document.querySelector("#btn__ingresar a").href;
     }else{
+        Swal.fire({
+            background:"#C9FFA5",
+            title: "BIENVENIDO A Q'PLAY",
+            color:"green",
+            text:"Diviertete y aprende de forma interactiva en esta app de preguntas y respuestas !!",
+            confirmButtonText:'REGISTRATE',
+            confirmButtonColor:'green',
+            width: 900,
+            padding: '3em',
+            showClass: {
+                popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+                popup: 'animate__animated animate__fadeOutUp'
+            }
+        });
         btnPlay.remove();
         logo.remove();
         nameGame.remove();
@@ -52,6 +69,7 @@ if (existe) {
     }
     inputSubmit.addEventListener("click", function (event) {event.preventDefault(); getInput(); });
 }
+
 
 
 

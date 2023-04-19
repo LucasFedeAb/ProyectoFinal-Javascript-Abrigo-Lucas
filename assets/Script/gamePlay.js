@@ -408,6 +408,7 @@ function showStatistics() {
     if (!maxScoreData) {
         Swal.fire({
             background:"#C9FFA5",
+            color:'green',
             title:"MEJOR PUNTUACIÓN",
             html: 
             `<strong>Aun no hay puntajes registrados. Comienza a jugar para registrar puentajes y superarlos !!</strong>`,
@@ -423,6 +424,7 @@ function showStatistics() {
     }else{
         Swal.fire({
             background:"#C9FFA5",
+            color:'green',
             title:"MEJOR PUNTUACIÓN",
             html: 
             `<strong>El mejor puntaje es ${maxScoreData.score} en la categoría ${maxScoreData.category}</strong>`,

@@ -3,13 +3,11 @@
 @import './header';
 @import './barraNav';
 @import './footer';
-@import './slider';
 @import './responsive';
 
 /* Index */
 html {
     font-family: sans-serif;
-    
 }
 #body-index {
     width: 100%;
@@ -27,7 +25,6 @@ html {
     display: flex;
     justify-content: center;
     margin-top: 40px;
-
 }
 
 .img__logo__index {
@@ -461,7 +458,7 @@ swiper-slide img {
 /* Login */
 
 #card-login{
-    width: 98%;
+    width: 75%;
     max-width: 500px;
     height: max-content;
     margin: 0 auto;
